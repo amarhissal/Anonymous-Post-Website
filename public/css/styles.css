@@ -24,8 +24,16 @@ body {
 .footer{
   color: black;
  
-  position: fixed; 
+   
   left: 0; bottom: 5%;
   width: 100%;
  text-align: center;
+}
+#preloader{
+  background: #fff url('Loading_icon.gif') no-repeat center center;
+background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
