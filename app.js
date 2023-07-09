@@ -66,7 +66,7 @@ app.get('/login',function(req,res){
 
 app.get('/secrets',auth,function(req,res){
   
-  User.find({secrets:{$ne:null}}).then((foundUser)=>{
+  User.find({secrets:{$ne:null}}).sort('secrets').then((foundUser)=>{
 
 
     res.render('secrets',{ token: req.query.token,usersecrets:foundUser})
